@@ -20,7 +20,7 @@ def getURL():
         print(url)
         data = FeatureExtraction.getAttributess(url)
         print(data)
-        RFmodel = pickle.load(open('Phishing_website detection_using_UI/RandomForestModel.sav', 'rb'))
+        RFmodel = pickle.load(open('Phishing_website_detection_using_UI/RandomForestModel.sav', 'rb'))
         predicted_value = RFmodel.predict(data)
         #print(predicted_value)
         if predicted_value == 0:    
